@@ -108,11 +108,11 @@ mvn spring-boot:run
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
 **Shubham Santosh Masali**  
-📧 Email: shubhammasali76@gmail.com  
-🌐 GitHub: [Shubham-Masali76](https://github.com/Shubham-Masali76)
+Email: shubhammasali76@gmail.com  
+GitHub: [Shubham-Masali76](https://github.com/Shubham-Masali76)
 
 ---
 
