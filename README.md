@@ -86,7 +86,9 @@ mvn spring-boot:run
 
 ## Screenshots
 
----
+![My Output Screenshot](https://github.com/Shubham-Masali76/Secure-Share-Website-Using-Java-REST-API/blob/6034631662693b6b3bd4eed0f833deae666450ff/Screenshot%202025-08-08%20110253.png)
+
+--- 
 
 ## API Endpoints
 
