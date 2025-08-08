@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #f1f2f6, #dfe6e9);
+  min-height: 100vh;
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+h1,
+h2 {
+  color: #2d3436;
+  margin-bottom: 25px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 12px 0;
+  border: 1px solid #ced6e0;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #ecf0f1;
+}
+
+button {
+  display: inline-block;
+  background-color: #0984e3;
+  color: white;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0652dd;
+}
+
+.file-list {
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  margin-top: 30px;
+}
+
+.file-list h2 {
+  margin-bottom: 16px;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.file-item:hover {
+  background-color: #f1f2f6;
+}
+
+.file-item span {
+  font-size: 14px;
+  color: #2d3436;
+  word-break: break-word;
+}
+
+.file-item button {
+  font-size: 13px;
+  padding: 8px 12px;
+  margin-left: 8px;
+}
+
+#loader {
+  display: none;
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  form,
+  .file-list {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .file-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .file-item button {
+    margin: 6px 0 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Share - Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+
+        <div id="loader" class="loader"></div>
+
+        <div id="profileSection" style="display:none;">
+            <p><strong>ID:</strong> <span id="userId"></span></p>
+            <p><strong>Email:</strong> <span id="userEmail"></span></p>
+
+            <form id="updateUsernameForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <button type="submit">Update Username</button>
+            </form>
+        </div>
+
+        <br>
+        <a href="dashboard.html">Back to Dashboard</a>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
